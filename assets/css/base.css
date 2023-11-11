@@ -5,6 +5,7 @@
 :root{
     --app-font-general:'Outfit', sans-serif;
     --white-bg-color:#fff;
+    --black-bg-color:#000;
 
 }
 
@@ -76,44 +77,76 @@ header{
     align-content: center;
 }
 
+.flex-column{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .hero-banner{
     height: 100vh;
     background: #000 url("../images/herobanner.jpg") center center / cover no-repeat fixed;
     opacity: 0.8;
 }
-
-.row{
-    margin-top: 25px;
-  }
-
 .column{
     width: calc(23.5% - 14px) ;
     background-color: var(--app-header-bg);
-    padding: 20px;
-    height: 280px;
+    padding: 15px;
     border-radius: 15px;
     box-shadow: 1px 1px 2px rgb(0 0 0 /0.08);
     margin-right: 15px;
 }
 .one{
     width: 40%;
-    background: #000 url("../images/aboutme.jpg") center center / cover no-repeat ;
+    background: #000 url("../images/aboutme.png") center top / cover no-repeat ;
+    height: 450px;
 }
 .two{
     width: 60%;
+    height: 450px;
+}
+
+.three{
+    width: 60%;
+    height: 400px;
+}
+
+.four{
+    width: 40%;
+    background: #000 url("../images/contactus.png") center top / cover no-repeat ;
+    height: 400px;
 }
 h2{
     color: var(--app-general-color);
-    text-align: center
+    text-align: center;
+    margin-bottom: 10px;
 }
-.two p{
+
+
+.two article{
+    font-family: var(--app-font-general);
+    font-size: 20px;
+}
+
+.three article{
+    font-size: 20px;
+    font-family: var(--app-font-general);
+    text-align: center;
+    margin-top: 30px;
+}
+
+i{
+    color: var(--black-bg-color);
+    font-size: 30px;
     margin-top: 50px;
-    font-family: var(--app-font-general);
-    font-size: 20px;
+    margin-left: 25px;
 }
-.about-me{
+
+.about-contact-me{
     height: 400px;
-    margin-top: 150px;
+    margin-top: 120px;
     font-family: var(--app-font-general);
     font-size: 20px;
+    height: 600px;
 }
